@@ -105,19 +105,6 @@ public class CartServiceImpl implements ICartService {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     private CartVo getCartVoLimit(Integer userId){
         CartVo cartVo = new CartVo();
         List<Cart> cartList = cartMapper.selectCartByUserId(userId);
@@ -183,30 +170,4 @@ public class CartServiceImpl implements ICartService {
         return cartMapper.selectCartProductCheckedStatusByUserId(userId) == 0;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
